@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contact Me" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="MasciApps_Ass1.Contact" %>
+﻿<%@ Page Title="Contact Me" Language="C#" MasterPageFile="~/Interior.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="MasciApps_Ass1.Contact" %>
 <%-- 
 /**
 * Author : Daniel Masci - 200299037
@@ -12,12 +12,6 @@
 */ 
 --%>
 <asp:Content ID="ContactPageContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
-        <h1>Contact Us</h1>
-        <div class="row">
-            <div class="col-md-offset-3 col-md-6">
-            </div>
-        </div>
-    </div>
+    
 </asp:Content>
 

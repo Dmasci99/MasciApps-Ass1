@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Services" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Services.aspx.cs" Inherits="MasciApps_Ass1.Services" %>
+﻿<%@ Page Title="Services" Language="C#" MasterPageFile="~/Interior.Master" AutoEventWireup="true" CodeBehind="Services.aspx.cs" Inherits="MasciApps_Ass1.Services" %>
 <%-- 
 /**
 * Author : Daniel Masci - 200299037

@@ -14,7 +14,6 @@ namespace MasciApps_Ass1.UserControls
             setActivePageLink();
         }
 
-
         /**
          * This method sets the appropriate navbar link to "active". 
          *  

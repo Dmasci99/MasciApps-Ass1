@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About Me" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="MasciApps_Ass1.About" %>
+﻿<%@ Page Title="About Me" Language="C#" MasterPageFile="~/Interior.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="MasciApps_Ass1.About" %>
 <%-- 
 /**
 * Author : Daniel Masci - 200299037
@@ -12,5 +12,7 @@
 */ 
 --%>
 <asp:Content ID="AboutPageContent" ContentPlaceHolderID="MainContent" runat="server">
+
+
 
 </asp:Content>
