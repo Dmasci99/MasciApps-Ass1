@@ -1,5 +1,16 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MasciApps_Ass1.Default" %>
-
+<%-- 
+/**
+* Author : Daniel Masci - 200299037
+* Class : Enterprise Computing
+* Semester : 4
+* Professor : Tom Tsiliopolous
+* Purpose : Assignment 1 - ASP.NET Portfolio
+* Website Name : DanMasci.azurewebsites.net/Default.aspx
+* 
+* The Following page is the Content for the "Home" page.
+*/ 
+--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     
     <div id="home-page">

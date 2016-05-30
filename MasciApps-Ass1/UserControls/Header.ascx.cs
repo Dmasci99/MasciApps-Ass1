@@ -5,19 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace MasciApps_Ass1
+namespace MasciApps_Ass1.UserControls
 {
-    /**
-     * @AuthorL Dan Masci
-     * @Date: 2016-05-26
-     * @Version: 0.0.1 - added setActivePageLink method
-     */
-    public partial class Navbar : System.Web.UI.UserControl
+    public partial class Header : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             setActivePageLink();
         }
+
 
         /**
          * This method sets the appropriate navbar link to "active". 
@@ -29,10 +25,10 @@ namespace MasciApps_Ass1
         {
             switch (Page.Title)
             {
-                case "About": about.Attributes.Add("class", "active"); break;
+                case "About Me": about.Attributes.Add("class", "active"); break;
                 case "Projects": projects.Attributes.Add("class", "active"); break;
                 case "Services": services.Attributes.Add("class", "active"); break;
-                case "Contact": contact.Attributes.Add("class", "active"); break;
+                case "Contact Me": contact.Attributes.Add("class", "active"); break;
             }
         }
     }

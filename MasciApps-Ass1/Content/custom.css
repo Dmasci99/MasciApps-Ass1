@@ -181,7 +181,7 @@ body {
   height: 100%;
 }
 body {
-  height: calc(100% - 175px);
+  height: calc(100% - 172px);
   overflow-x: hidden;
 }
 /******* Font Manipulations ********/

@@ -11,7 +11,7 @@ namespace MasciApps_Ass1.UserControls
 {
 
 
-    public partial class Jumbotron
+    public partial class Footer
     {
     }
 }

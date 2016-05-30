@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MasciApps_Ass1 {
+namespace MasciApps_Ass1.UserControls {
     
     
-    public partial class Navbar {
+    public partial class Header {
         
         /// <summary>
         /// about control.

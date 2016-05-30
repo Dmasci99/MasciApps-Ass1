@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MasciApps_Ass1.Site" %>
-<%@ Register Src="~/UserControls/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
+<%@ Register Src="~/UserControls/Header.ascx" TagName="Header" TagPrefix="dm" %>
+<%@ Register Src="~/UserControls/Footer.ascx" TagName="Footer" TagPrefix="dm" %>
 
 <!DOCTYPE html>
 
@@ -10,8 +11,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- CSS / Fonts -->
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />		
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="Content/custom.css" rel="stylesheet" />
@@ -19,36 +18,19 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>    		
-    <!-- Header -->
-    <header class="header">
-	    <div class="container">
-            <bs3:Navbar ID="MainNav" runat="server" />        
-	    </div>
-    </header>
+    <!-- Nav Header -->
+    <dm:Header ID="MainHeader" runat="server" />        
 
     <!-- Content -->
     <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
+        <!-- .aspx pages are injected here -->
     </asp:ContentPlaceHolder>
 
     <!-- Footer -->
-    <div class="clear-float"></div>				
-	<footer class="section">
-		<div class="container">			
-			<a class="home" href="/">Home</a>			
-		</div><!-- container -->
-
-		<div class="copyright">
-			<div class="container">
-				<p class="" id="copyright">Copyright &copy; 2016 MasciApps. All Rights Reserved.</p>
-                <p class="" id="author">Website by Dan Masci</p>
-			</div><!-- container -->				
-		</div><!--div.copyright-->
-	</footer>
+    <dm:Footer ID="MainFooter" runat="server" />
 
     <!-- JS -->
     <script src="Scripts/jquery-2.2.3.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/moby.js"></script>
     <script src="Scripts/custom.js"></script>
 </body>
