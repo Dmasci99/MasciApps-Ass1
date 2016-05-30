@@ -1,27 +1,27 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="MasciApps_Ass1.Navbar" %>
 
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="Default.aspx"><i class="fa fa-fort-awesome fa-lg"></i> Lab2</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
-            <ul class="nav navbar-nav navbar-right">
-                <li runat="server" id="home"><a href="Default.aspx"><i class="fa fa-lg fa-home"></i> Home</a></li>
-                <li runat="server" id="contact"><a href="Contact.aspx"><i class="fa fa-lg fa-home"></i> Contact</a></li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
+<!-- Mobile Menu -->
+<span id="moby-button"><i class="fa fa-bars"></i></span>
+<div class="clear-float"></div><!-- clear-float -->
+
+<!-- Main Menu -->
+<nav id="header-nav">
+	<ul class="menu">
+		<li><a runat="server" id="about" href="../About.aspx">About</a></li>
+		<li><a runat="server" id="projects" href="../Projects.aspx">Projects</a>
+			<ul class="sub-menu">
+				<li><a href="http://dekoningemc.ca/">Dekoning Mechanical</a></li>
+				<li><a href="http://www.turnkeybioscience.com/">Turnkey Bioscience</a></li>
+				<li><a href="http://www.liveinluxury.ca/">LiveInLuxury</a></li>
+				<li><a href="http://dogdayscamp.com/">DogDaysCamp</a></li>
+			</ul>
+		</li>						
+		<li><a runat="server" id="services" href="../Services.aspx">Services</a></li>	
+		<li><a runat="server" id="contact" href="../Contact.aspx">Contact</a></li>	
+		<div class="clear-float"></div><!--clear-float-->				
+	</ul>
+</nav><!--.header-nav-->
+
+<div class="clear-float"></div><!--clear-float-->
 
 

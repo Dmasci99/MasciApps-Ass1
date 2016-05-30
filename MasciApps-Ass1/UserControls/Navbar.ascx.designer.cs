@@ -7,22 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MasciApps_Ass1
-{
-
-
-    public partial class Navbar
-    {
-
+namespace MasciApps_Ass1 {
+    
+    
+    public partial class Navbar {
+        
         /// <summary>
-        /// home control.
+        /// about control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
-
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor about;
+        
+        /// <summary>
+        /// projects control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor projects;
+        
+        /// <summary>
+        /// services control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor services;
+        
         /// <summary>
         /// contact control.
         /// </summary>
@@ -30,6 +46,6 @@ namespace MasciApps_Ass1
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl contact;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor contact;
     }
 }

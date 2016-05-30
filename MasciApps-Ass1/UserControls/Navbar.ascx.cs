@@ -29,8 +29,10 @@ namespace MasciApps_Ass1
         {
             switch (Page.Title)
             {
-                case "Home Page": home.Attributes.Add("class", "active"); break;
-                case "Contact Page": contact.Attributes.Add("class", "active"); break;
+                case "About": about.Attributes.Add("class", "active"); break;
+                case "Projects": projects.Attributes.Add("class", "active"); break;
+                case "Services": services.Attributes.Add("class", "active"); break;
+                case "Contact": contact.Attributes.Add("class", "active"); break;
             }
         }
     }
