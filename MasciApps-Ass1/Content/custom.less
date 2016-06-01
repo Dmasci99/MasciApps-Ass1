@@ -277,7 +277,7 @@ body {
 .button1 {
 	text-align: center;
 	margin: 15px 0;
-	a, button, span {
+	a, button, span, input {
 		color: @offWhite;
 		font-size: 14px;
 		background: @darkBlue;
@@ -1137,7 +1137,7 @@ header {
 				}
 			}//.text	
 			form {
-				.input {
+				.input-container {
 					&.left-half {
 						width: 49%;
 						float: left;
@@ -1161,11 +1161,14 @@ header {
 						height: 200px;
 						resize: none;
 					}//textarea
-				}//.input
+                    .form-error {
+                        color: red;
+                    }
+				}//.input-container
 				.submit {
 					.button1;
 					.width;
-					button { 
+					input { 
 						width: 100%;
 					}
 				}//.submit

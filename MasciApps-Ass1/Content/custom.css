@@ -288,7 +288,8 @@ body {
 }
 .button1 a,
 .button1 button,
-.button1 span {
+.button1 span,
+.button1 input {
   color: #f1f1f1;
   font-size: 14px;
   background: #3f507f;
@@ -306,7 +307,8 @@ body {
 }
 .button1 a:hover,
 .button1 button:hover,
-.button1 span:hover {
+.button1 span:hover,
+.button1 input:hover {
   cursor: pointer;
   background: #5065a1;
 }
@@ -786,7 +788,8 @@ header #moby-button:hover .fa {
 }
 #home-page .top-banner .rotator .slides .slide .container .button a,
 #home-page .top-banner .rotator .slides .slide .container .button button,
-#home-page .top-banner .rotator .slides .slide .container .button span {
+#home-page .top-banner .rotator .slides .slide .container .button span,
+#home-page .top-banner .rotator .slides .slide .container .button input {
   color: #f1f1f1;
   font-size: 14px;
   background: #3f507f;
@@ -804,7 +807,8 @@ header #moby-button:hover .fa {
 }
 #home-page .top-banner .rotator .slides .slide .container .button a:hover,
 #home-page .top-banner .rotator .slides .slide .container .button button:hover,
-#home-page .top-banner .rotator .slides .slide .container .button span:hover {
+#home-page .top-banner .rotator .slides .slide .container .button span:hover,
+#home-page .top-banner .rotator .slides .slide .container .button input:hover {
   cursor: pointer;
   background: #5065a1;
 }
@@ -1113,7 +1117,8 @@ header #moby-button:hover .fa {
 }
 .interior-page .gallery .projects .project .text .button a,
 .interior-page .gallery .projects .project .text .button button,
-.interior-page .gallery .projects .project .text .button span {
+.interior-page .gallery .projects .project .text .button span,
+.interior-page .gallery .projects .project .text .button input {
   color: #f1f1f1;
   font-size: 14px;
   background: #3f507f;
@@ -1131,7 +1136,8 @@ header #moby-button:hover .fa {
 }
 .interior-page .gallery .projects .project .text .button a:hover,
 .interior-page .gallery .projects .project .text .button button:hover,
-.interior-page .gallery .projects .project .text .button span:hover {
+.interior-page .gallery .projects .project .text .button span:hover,
+.interior-page .gallery .projects .project .text .button input:hover {
   cursor: pointer;
   background: #5065a1;
 }
@@ -1395,16 +1401,16 @@ header #moby-button:hover .fa {
   text-align: center;
   margin: 0 auto;
 }
-#contact-page .content .left form .input.left-half {
+#contact-page .content .left form .input-container.left-half {
   width: 49%;
   float: left;
 }
-#contact-page .content .left form .input.right-half {
+#contact-page .content .left form .input-container.right-half {
   width: 49%;
   float: right;
 }
-#contact-page .content .left form .input input,
-#contact-page .content .left form .input textarea {
+#contact-page .content .left form .input-container input,
+#contact-page .content .left form .input-container textarea {
   display: block;
   width: 100%;
   border: 2px solid #3f507f;
@@ -1417,29 +1423,32 @@ header #moby-button:hover .fa {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-#contact-page .content .left form .input input::-webkit-input-placeholder,
-#contact-page .content .left form .input textarea::-webkit-input-placeholder {
+#contact-page .content .left form .input-container input::-webkit-input-placeholder,
+#contact-page .content .left form .input-container textarea::-webkit-input-placeholder {
   color: #5271cc;
   opacity: 1;
 }
-#contact-page .content .left form .input input:-moz-placeholder,
-#contact-page .content .left form .input textarea:-moz-placeholder {
+#contact-page .content .left form .input-container input:-moz-placeholder,
+#contact-page .content .left form .input-container textarea:-moz-placeholder {
   color: #5271cc;
   opacity: 1;
 }
-#contact-page .content .left form .input input::-moz-placeholder,
-#contact-page .content .left form .input textarea::-moz-placeholder {
+#contact-page .content .left form .input-container input::-moz-placeholder,
+#contact-page .content .left form .input-container textarea::-moz-placeholder {
   color: #5271cc;
   opacity: 1;
 }
-#contact-page .content .left form .input input:-ms-input-placeholder,
-#contact-page .content .left form .input textarea:-ms-input-placeholder {
+#contact-page .content .left form .input-container input:-ms-input-placeholder,
+#contact-page .content .left form .input-container textarea:-ms-input-placeholder {
   color: #5271cc;
   opacity: 1;
 }
-#contact-page .content .left form .input textarea {
+#contact-page .content .left form .input-container textarea {
   height: 200px;
   resize: none;
+}
+#contact-page .content .left form .input-container .form-error {
+  color: red;
 }
 #contact-page .content .left form .submit {
   text-align: center;
@@ -1447,7 +1456,8 @@ header #moby-button:hover .fa {
 }
 #contact-page .content .left form .submit a,
 #contact-page .content .left form .submit button,
-#contact-page .content .left form .submit span {
+#contact-page .content .left form .submit span,
+#contact-page .content .left form .submit input {
   color: #f1f1f1;
   font-size: 14px;
   background: #3f507f;
@@ -1465,7 +1475,8 @@ header #moby-button:hover .fa {
 }
 #contact-page .content .left form .submit a:hover,
 #contact-page .content .left form .submit button:hover,
-#contact-page .content .left form .submit span:hover {
+#contact-page .content .left form .submit span:hover,
+#contact-page .content .left form .submit input:hover {
   cursor: pointer;
   background: #5065a1;
 }
@@ -1507,7 +1518,7 @@ header #moby-button:hover .fa {
   padding: 15px;
   margin: 0 auto;
 }
-#contact-page .content .left form .submit button {
+#contact-page .content .left form .submit input {
   width: 100%;
 }
 #contact-page .content .divider {
@@ -1667,7 +1678,12 @@ header #moby-button:hover .fa {
 #register-page form .submit span,
 #add-contact form .submit span,
 #update-contact form .submit span,
-#update-todo form .submit span {
+#update-todo form .submit span,
+#login-page form .submit input,
+#register-page form .submit input,
+#add-contact form .submit input,
+#update-contact form .submit input,
+#update-todo form .submit input {
   color: #f1f1f1;
   font-size: 14px;
   background: #3f507f;
@@ -1697,7 +1713,12 @@ header #moby-button:hover .fa {
 #register-page form .submit span:hover,
 #add-contact form .submit span:hover,
 #update-contact form .submit span:hover,
-#update-todo form .submit span:hover {
+#update-todo form .submit span:hover,
+#login-page form .submit input:hover,
+#register-page form .submit input:hover,
+#add-contact form .submit input:hover,
+#update-contact form .submit input:hover,
+#update-todo form .submit input:hover {
   cursor: pointer;
   background: #5065a1;
 }
@@ -1813,7 +1834,12 @@ header #moby-button:hover .fa {
 #register-page form .buttons span,
 #add-contact form .buttons span,
 #update-contact form .buttons span,
-#update-todo form .buttons span {
+#update-todo form .buttons span,
+#login-page form .buttons input,
+#register-page form .buttons input,
+#add-contact form .buttons input,
+#update-contact form .buttons input,
+#update-todo form .buttons input {
   color: #f1f1f1;
   font-size: 14px;
   background: #3f507f;
@@ -1843,7 +1869,12 @@ header #moby-button:hover .fa {
 #register-page form .buttons span:hover,
 #add-contact form .buttons span:hover,
 #update-contact form .buttons span:hover,
-#update-todo form .buttons span:hover {
+#update-todo form .buttons span:hover,
+#login-page form .buttons input:hover,
+#register-page form .buttons input:hover,
+#add-contact form .buttons input:hover,
+#update-contact form .buttons input:hover,
+#update-todo form .buttons input:hover {
   cursor: pointer;
   background: #5065a1;
 }

@@ -20,21 +20,29 @@
 			    <div class="text">
 				    <p>I would love for you to Contact Me! Please fill out the info below and I will get back to you asap!</p>
 			    </div><!-- text -->
-			    <form method="post" action="/">
-				    <div class="input left-half">
-					    <input id="fullName" name="fullName" type="text" placeholder="Full Name:">
+                <form runat="server">
+				    <div class="input-container left-half">
+					    <asp:TextBox runat="server" CssClass="input" ID="FullNameTextBox" Placeholder="Full Name:"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic" CssClass="form-error" ID="FullNameValidator" runat="server" 
+                            ErrorMessage="Full Name is required" ControlToValidate="FullNameTextBox"></asp:RequiredFieldValidator>
 				    </div><!-- input -->
-				    <div class="input right-half">
-					    <input id="emailAddress" name="emailAddress" type="text" placeholder="Email Address:">
+				    <div class="input-container right-half">
+					    <asp:TextBox runat="server" CssClass="input" ID="EmailAddressTextBox" Placeholder="Email Address:"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic" CssClass="form-error" ID="EmailAddressValidator" runat="server" 
+                            ErrorMessage="Email Address is required" ControlToValidate="EmailAddressTextBox"></asp:RequiredFieldValidator>
 				    </div><!-- input -->
-				    <div class="input">
-					    <input id="emailSubject" name="emailSubject" type="text" placeholder="Subject:">
+				    <div class="input-container">
+					    <asp:TextBox runat="server" CssClass="input" ID="SubjectTextBox" Placeholder="Subject:"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic" CssClass="form-error" ID="SubjectValidator" runat="server" 
+                            ErrorMessage="Subject is required" ControlToValidate="SubjectTextBox"></asp:RequiredFieldValidator>
 				    </div><!-- input -->
-				    <div class="input textarea">
-					    <textarea placeholder="Type your message here..."></textarea>
+				    <div class="input-container textarea">
+					    <asp:TextBox runat="server" CssClass="input" ID="MessageTextBox" Placeholder="Type your message here..." TextMode="MultiLine"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic" CssClass="form-error" ID="MessageValidator" runat="server" 
+                            ErrorMessage="Message is required" ControlToValidate="MessageTextBox"></asp:RequiredFieldValidator>
 				    </div><!-- input -->
 				    <div class="submit">
-					    <button type="submit">Send</button>
+                        <asp:Button runat="server" CssClass="" ID="ContactSubmitButton" Text="Send" CausesValidation="true" OnClick="ContactSubmitButton_Click" />
 				    </div><!-- submit -->
 			    </form>
 		    </div><!-- left -->
