@@ -75,12 +75,16 @@
     <Content Include="Assets\contact.jpg" />
     <Content Include="Assets\contactme-header.jpg" />
     <Content Include="Assets\dashboard.jpg" />
+    <Content Include="Assets\dekoning.jpg" />
+    <Content Include="Assets\dogdayscamp.jpg" />
+    <Content Include="Assets\liveinluxury.jpg" />
     <Content Include="Assets\projects-header.jpg" />
     <Content Include="Assets\services-header.jpg" />
     <Content Include="Assets\slide1.jpg" />
     <Content Include="Assets\slide2.jpg" />
     <Content Include="Assets\slide3.jpg" />
     <Content Include="Assets\slide4.jpg" />
+    <Content Include="Assets\turnkey.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\custom.css" />
     <Content Include="Default.aspx" />

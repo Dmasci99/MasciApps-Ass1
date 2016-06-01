@@ -22,6 +22,7 @@
         <!-- Main Menu -->
         <nav id="header-nav">
 	        <ul class="menu">
+                <li id="home"><a href="../Default.aspx">Home</a></li>
 		        <li><a runat="server" id="about" href="../About.aspx">About</a></li>
 		        <li><a runat="server" id="projects" href="../Projects.aspx">Projects</a>
 			        <ul class="sub-menu">

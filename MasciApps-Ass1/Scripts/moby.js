@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
         5. insertAfter - The conten that will be inserted after the mobile menu
     */
 	
-	function openmoby(targetMenu, overlay, subMenuOpenIcon, subMenuCloseIcon, insertAfter) {
+    function openmoby(targetMenu, overlay, subMenuOpenIcon, subMenuCloseIcon, insertAfter) {
 		
         // .moby-active should be used to initiate the animation in your css file
         $('#moby').addClass('moby-active');

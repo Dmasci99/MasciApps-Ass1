@@ -549,6 +549,9 @@ header #header-nav .menu > li:hover .sub-menu {
 header #header-nav .menu > li:hover .sub-menu::before {
   opacity: 1;
 }
+header #header-nav .menu > li#home {
+  display: none;
+}
 header #account-nav {
   position: absolute;
   top: 50%;
@@ -2488,6 +2491,9 @@ footer .copyright p {
 	****************************************************************************************************/
   header #header-nav .menu {
     display: none;
+  }
+  header #header-nav .menu > li#home {
+    display: block;
   }
   header #account-nav {
     left: 40px;
