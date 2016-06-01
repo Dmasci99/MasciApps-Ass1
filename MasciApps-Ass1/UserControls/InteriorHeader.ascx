@@ -9,7 +9,7 @@
 * Website Name : DanMasci.azurewebsites.net
 * 
 * The Following control is used as my Inteiror-Page Header.
-* It is called into my Interior.Master.
+* It is only called into my Interior.Master.
 */
 --%>
 
