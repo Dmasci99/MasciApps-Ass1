@@ -49,6 +49,15 @@ namespace MasciApps_Ass1 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailAddressValidator;
         
         /// <summary>
+        /// EmailRegexValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator EmailRegexValidator;
+        
+        /// <summary>
         /// SubjectTextBox control.
         /// </summary>
         /// <remarks>
@@ -56,15 +65,6 @@ namespace MasciApps_Ass1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SubjectTextBox;
-        
-        /// <summary>
-        /// SubjectValidator control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator SubjectValidator;
         
         /// <summary>
         /// MessageTextBox control.

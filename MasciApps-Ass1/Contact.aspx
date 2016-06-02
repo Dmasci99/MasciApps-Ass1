@@ -30,11 +30,11 @@
 					    <asp:TextBox runat="server" CssClass="input" ID="EmailAddressTextBox" Placeholder="Email Address:"></asp:TextBox>
                         <asp:RequiredFieldValidator Display="Dynamic" CssClass="form-error" ID="EmailAddressValidator" runat="server" 
                             ErrorMessage="Email Address is required" ControlToValidate="EmailAddressTextBox"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator CssClass="form-error" runat="server" ID="EmailRegexValidator" ControlToValidate="EmailAddressTextBox"
+                            ErrorMessage="Must enter a valid email type" ValidationExpression=".{1,}@.{1,}\.[a-z]{2,8}"></asp:RegularExpressionValidator>
 				    </div><!-- input -->
 				    <div class="input-container">
 					    <asp:TextBox runat="server" CssClass="input" ID="SubjectTextBox" Placeholder="Subject:"></asp:TextBox>
-                        <asp:RequiredFieldValidator Display="Dynamic" CssClass="form-error" ID="SubjectValidator" runat="server" 
-                            ErrorMessage="Subject is required" ControlToValidate="SubjectTextBox"></asp:RequiredFieldValidator>
 				    </div><!-- input -->
 				    <div class="input-container textarea">
 					    <asp:TextBox runat="server" CssClass="input" ID="MessageTextBox" Placeholder="Type your message here..." TextMode="MultiLine"></asp:TextBox>
@@ -42,7 +42,8 @@
                             ErrorMessage="Message is required" ControlToValidate="MessageTextBox"></asp:RequiredFieldValidator>
 				    </div><!-- input -->
 				    <div class="submit">
-                        <asp:Button runat="server" CssClass="" ID="ContactSubmitButton" Text="Send" CausesValidation="true" OnClick="ContactSubmitButton_Click" />
+                        <asp:Button runat="server" CssClass="" ID="ContactSubmitButton" Text="Send" CausesValidation="true" OnClick="ContactSubmitButton_Click" 
+                             />
 				    </div><!-- submit -->
 			    </form>
 		    </div><!-- left -->
